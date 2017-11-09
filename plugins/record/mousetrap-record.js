@@ -3,7 +3,7 @@
  *
  * @author Dan Tao <daniel.tao@gmail.com>
  */
-(function(Mousetrap) {
+function addRecord(Mousetrap) {
     /**
      * the sequence currently being recorded
      *
@@ -201,5 +201,8 @@
     };
 
     Mousetrap.init();
+    
+    return Mousetrap
+}
 
-})(Mousetrap);
+module.exports = addRecord
